@@ -19,6 +19,7 @@
 		611C919421C24E0600A86C88 /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C919321C24E0600A86C88 /* UserProfileHeader.swift */; };
 		61A1AF4121C3AB480085EC77 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A1AF4021C3AB480085EC77 /* LoginController.swift */; };
 		61C5F0BD21C76BAF001C993D /* PhotoSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C5F0BC21C76BAF001C993D /* PhotoSelectorController.swift */; };
+		61C5F0BF21C7B0CA001C993D /* PhotoSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C5F0BE21C7B0CA001C993D /* PhotoSelectorCell.swift */; };
 		FB076036A96AD86A0D4ECFB5 /* Pods_instaUseFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDFE8B1CD113EF0AF00C9F9 /* Pods_instaUseFirebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		611C919321C24E0600A86C88 /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
 		61A1AF4021C3AB480085EC77 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		61C5F0BC21C76BAF001C993D /* PhotoSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorController.swift; sourceTree = "<group>"; };
+		61C5F0BE21C7B0CA001C993D /* PhotoSelectorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSelectorCell.swift; sourceTree = "<group>"; };
 		BBDFE8B1CD113EF0AF00C9F9 /* Pods_instaUseFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instaUseFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F62D88A5D1AF15FB169F827F /* Pods-instaUseFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instaUseFirebase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-instaUseFirebase/Pods-instaUseFirebase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				61C5F0BC21C76BAF001C993D /* PhotoSelectorController.swift */,
+				61C5F0BE21C7B0CA001C993D /* PhotoSelectorCell.swift */,
 			);
 			path = AddPhoto;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				610C4E8921BE04A000CDBD25 /* SignUpController.swift in Sources */,
+				61C5F0BF21C7B0CA001C993D /* PhotoSelectorCell.swift in Sources */,
 				610C4E9A21BE299D00CDBD25 /* Extensions.swift in Sources */,
 				611C918F21C20A2700A86C88 /* MainTabBarController.swift in Sources */,
 				611C919421C24E0600A86C88 /* UserProfileHeader.swift in Sources */,
