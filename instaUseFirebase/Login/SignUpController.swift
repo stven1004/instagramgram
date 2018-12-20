@@ -232,7 +232,7 @@ extension UIView {
         }
         
         if let bottom = bottom {
-            bottomAnchor.constraint(equalTo: bottom,constant:paddingBottom).isActive = true
+            bottomAnchor.constraint(equalTo: bottom,constant: -paddingBottom).isActive = true
         }
         
         if let right = right {
