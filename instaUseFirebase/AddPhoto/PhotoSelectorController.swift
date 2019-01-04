@@ -53,8 +53,6 @@ class PhotoSelectorController: UICollectionViewController, UICollectionViewDeleg
         
         DispatchQueue.global(qos: .background).async {
             allPhotos.enumerateObjects({ (asset, count, stop) in
-                print(count)
-                
                 let imageManager = PHImageManager.default()
                 let targetSize = CGSize(width: 200, height: 200)
                 let options = PHImageRequestOptions()
@@ -141,7 +139,6 @@ class PhotoSelectorController: UICollectionViewController, UICollectionViewDeleg
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! PhotoSelectorCell
         
         cell.photoImageView.image = images[indexPath.item]
-//        cell.backgroundColor = .blue
         
         return cell
     }

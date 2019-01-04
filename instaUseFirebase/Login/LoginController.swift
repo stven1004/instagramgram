@@ -16,7 +16,6 @@ class LoginController: UIViewController {
         
         let logoImageView = UIImageView(image: #imageLiteral(resourceName: "Instagram_logo_white"))
         logoImageView.contentMode = .scaleAspectFill
-//        logoImageView.backgroundColor = .red
         
         view.addSubview(logoImageView)
         logoImageView.anchor(top: nil, left: nil, bottom: nil, right: nil, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 200, height: 50)
@@ -108,7 +107,7 @@ class LoginController: UIViewController {
         attibutedTitle.append(NSAttributedString(string: "Sign up", attributes: [NSAttributedString.Key.font:UIFont.boldSystemFont(ofSize: 14),NSAttributedString.Key.foregroundColor: UIColor.rgb(red: 17, green: 154, blue: 237)]))
         
         button.setAttributedTitle(attibutedTitle, for: .normal)
-        //button.setTitle("Don't have an account? Sign up.", for: .normal)
+        
         button.addTarget(self, action: #selector(handleShowSignUp), for: .touchUpInside)
         return button
     }()
