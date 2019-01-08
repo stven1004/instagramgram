@@ -14,6 +14,8 @@
 		610C4E9121BE04A200CDBD25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610C4E8F21BE04A200CDBD25 /* LaunchScreen.storyboard */; };
 		610C4E9A21BE299D00CDBD25 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610C4E9921BE299D00CDBD25 /* Extensions.swift */; };
 		610C4E9C21BE5E4300CDBD25 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 610C4E9B21BE5E4300CDBD25 /* GoogleService-Info.plist */; };
+		6118932121E44AA4003ADB13 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6118932021E44AA4003ADB13 /* CommentCell.swift */; };
+		6118932321E44EE4003ADB13 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6118932221E44EE4003ADB13 /* Comment.swift */; };
 		611C918F21C20A2700A86C88 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C918E21C20A2700A86C88 /* MainTabBarController.swift */; };
 		611C919121C20A4100A86C88 /* UserProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C919021C20A4100A86C88 /* UserProfileController.swift */; };
 		611C919421C24E0600A86C88 /* UserProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611C919321C24E0600A86C88 /* UserProfileHeader.swift */; };
@@ -50,6 +52,8 @@
 		610C4E9221BE04A200CDBD25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		610C4E9921BE299D00CDBD25 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		610C4E9B21BE5E4300CDBD25 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6118932021E44AA4003ADB13 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		6118932221E44EE4003ADB13 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		611C918E21C20A2700A86C88 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		611C919021C20A4100A86C88 /* UserProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileController.swift; sourceTree = "<group>"; };
 		611C919321C24E0600A86C88 /* UserProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileHeader.swift; sourceTree = "<group>"; };
@@ -162,6 +166,7 @@
 				615B748121D345C20096249D /* HomeController.swift */,
 				615B748321D3485A0096249D /* HomePostCell.swift */,
 				61CCA77D21E3618000A3BDC9 /* CommentsController.swift */,
+				6118932021E44AA4003ADB13 /* CommentCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -211,6 +216,7 @@
 			children = (
 				61E8DA7021CF365D006BB379 /* Post.swift */,
 				615FC9DC21D5FB94001C8D6E /* User.swift */,
+				6118932221E44EE4003ADB13 /* Comment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -356,6 +362,7 @@
 				61CCA77621E2EA9000A3BDC9 /* CameraController.swift in Sources */,
 				61E8DA7321CF3920006BB379 /* UserProfilePhotoCell.swift in Sources */,
 				615FC9DD21D5FB94001C8D6E /* User.swift in Sources */,
+				6118932121E44AA4003ADB13 /* CommentCell.swift in Sources */,
 				611C918F21C20A2700A86C88 /* MainTabBarController.swift in Sources */,
 				611C919421C24E0600A86C88 /* UserProfileHeader.swift in Sources */,
 				61CCA77C21E346BC00A3BDC9 /* CustomAnimationDismisser.swift in Sources */,
@@ -367,6 +374,7 @@
 				614D3A5121CB3FC50078B082 /* PhotoSelectorHeader.swift in Sources */,
 				61CCA77E21E3618000A3BDC9 /* CommentsController.swift in Sources */,
 				61C5F0BD21C76BAF001C993D /* PhotoSelectorController.swift in Sources */,
+				6118932321E44EE4003ADB13 /* Comment.swift in Sources */,
 				615B748221D345C20096249D /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

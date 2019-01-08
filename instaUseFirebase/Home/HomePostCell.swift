@@ -10,6 +10,7 @@ import UIKit
 
 protocol HomePostCellDelegate {
     func didTapComment(post: Post)
+    func didLike(for cell: HomePostCell)
 }
 
 class HomePostCell: UICollectionViewCell {
@@ -19,6 +20,8 @@ class HomePostCell: UICollectionViewCell {
     var post: Post? {
         didSet {
             guard let postImageUrl = post?.imageUrl else { return }
+            
+            likeButton.setImage(post?.hasLiked == true ? #imageLiteral(resourceName: "like_selected").withRenderingMode(.alwaysOriginal) : #imageLiteral(resourceName: "like_unselected").withRenderingMode(.alwaysOriginal), for: .normal)
         
             photoImageView.loadImage(urlString: postImageUrl)
             
@@ -27,7 +30,6 @@ class HomePostCell: UICollectionViewCell {
             usernameLabel.text = post?.user.username
             
             guard let profileImageUrl = post?.user.profileImageUrl else { return }
-            
             
             userProfileImageView.loadImage(urlString: profileImageUrl)
             
@@ -49,7 +51,7 @@ class HomePostCell: UICollectionViewCell {
         let timeAgoDisplay = post.creationDate.timeAgoDisplay()
         attributedText.append(NSAttributedString(string: timeAgoDisplay, attributes: [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14), NSAttributedString.Key.foregroundColor: UIColor.gray]))
         
-        self.captionLabel.attributedText = attributedText
+        captionLabel.attributedText = attributedText
     }
     
     let userProfileImageView: CustomImageView = {
@@ -100,11 +102,17 @@ class HomePostCell: UICollectionViewCell {
         return button
     }()
     
-    let likeButton: UIButton = {
+    lazy var likeButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(#imageLiteral(resourceName: "like_unselected").withRenderingMode(.alwaysOriginal), for: .normal)
+        button.addTarget(self, action: #selector(handleLike), for: .touchUpInside)
         return button
     }()
+    
+    @objc func handleLike() {
+        print("Handleing like from within cell...")
+        delegate?.didLike(for: self)
+    }
     
     let bookmarkButton: UIButton = {
         let button = UIButton(type: .system)
